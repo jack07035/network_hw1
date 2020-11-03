@@ -1,0 +1,33 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>image library</title>
+    </head><body>
+    
+    <h1>寵物登記所</h1>
+    
+    <img src="titleimg.jpg" height = 300 width=300/>
+    
+    <p>You can fill out this form to register your pet.</p>
+    
+    <form method="post" enctype="multipart/form-data" action="/">
+      <label for="name">Pet name:</label>
+      <input name="name" type="text"><br>
+      <label for="comment">Species:</label>
+      <select name="comment" >
+        <OPTION VALUE="dog">dog
+        <OPTION VALUE="cat">cat
+        <OPTION VALUE="rabbit">rabbit
+        <OPTION VALUE="others">others
+      </select><br>
+      <input name="file" type="file"><br>
+      <input type="submit" value="submit">
+    </form>
+
+    <p>Upload success !</p>
+
+    <p>Click <a href="list.txt">library</a> to see all pet imformation</p>
+
+    
+    </body>
+    </html>
+    
