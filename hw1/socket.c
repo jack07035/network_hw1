@@ -333,7 +333,7 @@ int main() {
                 } else { 
                     client->received += r;
                     client->request[client->received] = 0; 
-printf("                Original:%s\n",client->request);
+//printf("                Original:%s\n",client->request);
                     char *q = strstr(client->request, "\r\n\r\n");
                     if(strncmp("POST /",client->request,6)==0)
                     {
@@ -374,7 +374,7 @@ printf("                Original:%s\n",client->request);
                             ptr++;
                             qtr++;
                         }
-                        printf("n=%s k=%s \n",petname,petkind);
+                        //printf("n=%s k=%s \n",petname,petkind);
 
 
                         tmp=strstr(tmp,boundary);
@@ -387,7 +387,7 @@ printf("                Original:%s\n",client->request);
                         tmp=tmp+10;
                         endtmp=strstr(tmp,"\r\n");
                         strncpy(filename,tmp,endtmp-tmp-1);
-                        printf("my!!!filename=%s\n",filename);
+                        //printf("my!!!filename=%s\n",filename);
 
                         FILE *list;
                         list = fopen("public/list.txt","a+");
@@ -412,7 +412,7 @@ printf("                Original:%s\n",client->request);
 
                             
                             
-                            printf("open file !!!!!!%s\n",fullfilename);
+                            //printf("open file !!!!!!%s\n",fullfilename);
                             input=fopen(fullfilename,"wb+");
                             tmp=strstr(tmp,"\r\n");
                             tmp=tmp+2;
